@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/assets/libs/layui/css/layui.css">
+    <script src="/assets/libs/layui/layui.js"></script>
+    <style>
+        #die
+        {
+            margin: 10% 30% 10% 30%;
+            width: 40%;
+            height: 40%;
+            border: 1px solid #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <div id="die">
+        <form class="layui-form"  method="post">
+            <div class="layui-form-item">
+                <label class="layui-form-label">账号</label>
+                <div class="layui-input-block">
+                    <input type="text" class="layui-input" placeholder="请输入账号"  required autocomplete="off">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码框</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+
+
+
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">登陆</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+</body>
+</html>
